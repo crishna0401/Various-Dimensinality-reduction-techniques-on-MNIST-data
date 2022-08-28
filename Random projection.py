@@ -102,5 +102,5 @@ def check_accuracy(loader, model):
     model.train()
     return num_correct/num_samples
 
-print(check_accuracy(train_loader,model))
-print(check_accuracy(test_loader,model))
+print('Accuracy on training set: %2f' % (100*check_accuracy(train_loader, model)))
+print('Accuracy on test set: %2f' % (100*check_accuracy(test_loader, model)))
